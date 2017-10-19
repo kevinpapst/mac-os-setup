@@ -9,13 +9,16 @@ Be careful: it was never meant to run with any other OS, so don't try it!
 
 ## What is included?
 
-Its a backup and "out-of-the-box setup" for my complete Mac working environment ... well not everything, but everything that is possible to be setup in an automated way ;-)
+Its a backup and "out-of-the-box setup" for my complete Mac working environment ... well not everything, but everything that is possible to be setup in an automated way.
+
+That repo was mainly written to support myself, but I hope that you can use it as an inspiration for own environment. 
+You can not only improve your workflow, but it also allows you to move to a new Mac in a matter of minutes. 
 
 Main files and folder:
 
 - `bin/` - helper scripts and binaries  
 - `dotfiles/` - every file in here will be copied to your HOME (~) directory  
-- `installer/` - each file is a simple software installer, checking upfront if the installation is neccessary
+- `installer/` - some basic software installer, that can't be fetched by Homebrew
 - `settings/` - installer scripts for settings
 - `Brewfile` - all the brew repos that will be watched and the software to be installed  
 
@@ -24,10 +27,9 @@ Main files and folder:
 Make sure that you checked the following points before you run the installer:
 
 - Remove any file from `installer/` that you don't need
-- Carefully read and adjust `Brewfile` before executing the installer   
-- Make sure that the `.macos` settings are customized to your requirements    
+- Carefully read and adjust `Brewfile` to only install the software you need   
+- Make sure that the `.macos` settings are thoroughly reviewed    
 - Set your name and email in `settings/git.sh` 
-- The MacOS settings in `settings/macos.sh` should be thoroughly reviewed 
 
 ## Installation
 
@@ -49,11 +51,9 @@ cd ~/dotfiles/
 ```
 
 
-## Thanks ...
+## Inspired by ...
 
-* [Ingo Walz](https://github.com/iwalz/) for the idea to read more about public dotfiles
-* [http://dotfiles.github.io/](Dotfiles) for the great collection
-* [Kevin Elliott](https://github.com/kevinelliott/.dotfiles) for his repo
-* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) for his repo
-* [tutsplus](http://net.tutsplus.com/tutorials/tools-and-tips/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles/)
+* [Dotfiles](http://dotfiles.github.io/) the unofficial guide to dotfiles on GitHub
+* [Kevin Elliott](https://github.com/kevinelliott/.dotfiles) for his dotfiles repo
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) for all his scripts
 * Read through the source files, there are more mentions included ...

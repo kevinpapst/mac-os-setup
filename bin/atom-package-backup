@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Usage: atom-package-backup
+#
+# Saves a list of your currently installed atom packages for install via atom-package-install
+
+set -e
+
+apm list --installed --bare > ~/dotfiles/atom/packages.list

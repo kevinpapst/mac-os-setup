@@ -1,0 +1,33 @@
+"*":
+  core:
+    disabledPackages: [
+      "metrics"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+    projectHome: "/Users/kevin/Development/"
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "monokai"
+    ]
+  editor:
+    fontFamily: "Office Code Pro"
+  "exception-reporting":
+    userId: "09f670eb-5f99-2e3e-fc02-697ebb7c3546"
+  metrics:
+    userId: "f2a67c17a6c44ee076bd1204e01e2af00a07bc7c"
+  "release-notes":
+    viewedVersion: "0.92.0"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+"exception-reporting":
+  userId: "3e860f8b-f359-994e-a646-74ac133e43cf"
+metrics:
+  userId: "f2a67c17a6c44ee076bd1204e01e2af00a07bc7c"
+welcome:
+  showOnStartup: false

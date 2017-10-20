@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# Inspirations from all over the place:
-# https://github.com/kaicataldo/dotfiles/blob/master/bootstrap.sh
+# Inspirations came from all over the fantastic .dotfiles repos at GitHub!
 #
 
 # Ask the user a Yes/No question
@@ -14,25 +13,6 @@ function ask_question() {
         * ) return 2;;
     esac
 }
-
-# Create directory if it doesn't exist
-function create_dir() {
-    if [[ ! -e $1 ]]; then
-        mkdir $1
-        echo "${1} directory created"
-    elif [[ ! -d $1 ]]; then
-        echo "${1} already exists but is not a directory"
-    fi
-}
-
-# Create a symlink
-function create_symlink() {
-    ln -sfn $1 $2
-    echo "Symlinked ${1} -> ${2}"
-}
-
-
-# -------------------------------------------------------------------------------------------
 
 # Get the dotfiles directory's absolute path
 DOTFILES_DIR="$(cd "$(dirname "$0")"; pwd -P)"
@@ -93,7 +73,5 @@ if ask_question 'Do you want to reboot your computer now?'; then
     exit 0
 fi
 
-unset create_dir
-unset create_symlink
 unset ask_question
 exit 1

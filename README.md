@@ -9,16 +9,18 @@ Be careful: it was never meant to run with any other OS, so don't try it!
 
 ## What is included?
 
-Its a backup and "out-of-the-box setup" for my complete Mac working environment ... well not everything, but everything that is possible to be setup in an automated way.
+Its a backup and "out-of-the-box setup" for my working environment. Well, at least for everything that is possible to be setup in an automated way.
 
-That repo was mainly written to support myself, but I hope that you can use it as an inspiration for own environment. 
-You can not only improve your workflow, but it also allows you to move to a new Mac in a matter of minutes. 
+That repo was mainly written to share my learnings and quickly become productive on a new machine. I also hope that you will use it as an inspiration for your own environment. 
+Its fun for me to play around with this setup and improve my tooling and workflow, so this repo might get changed quite often. 
 
 Main files and folder:
 
+- `atom/` - my atom settings, will be linked to ~./atom  
 - `bin/` - helper scripts and binaries  
 - `dotfiles/` - every file in here will be copied to your HOME (~) directory  
 - `installer/` - some basic software installer, that can't be fetched by Homebrew
+- `iterm2/` - my iTerm2 configuration, files will be linked via MacOS configuration (manual restart iTerm2 afterwards) 
 - `settings/` - installer scripts for settings
 - `Brewfile` - all the brew repos that will be watched and the software to be installed  
 
@@ -29,7 +31,8 @@ Make sure that you checked the following points before you run the installer:
 - Remove any file from `installer/` that you don't need
 - Carefully read and adjust `Brewfile` to only install the software you need   
 - Make sure that the `.macos` settings are thoroughly reviewed    
-- Set your name and email in `settings/git.sh` 
+- Adjust your Git credentials and GitHub settings in `settings/git.sh` 
+- add the file `~/dotfiles/.local` or `~/.bash_local` and add your own stuff
 
 ## Installation
 
@@ -53,6 +56,7 @@ cd ~/dotfiles/
 
 ## Inspired by ...
 
+* [https://github.com/nicksp/dotfiles](Nick Plekhanov's Dotfiles) and his zsh inspiration
 * [Dotfiles](http://dotfiles.github.io/) the unofficial guide to dotfiles on GitHub
 * [Kevin Elliott](https://github.com/kevinelliott/.dotfiles) for his dotfiles repo
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) for all his scripts

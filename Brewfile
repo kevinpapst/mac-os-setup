@@ -113,3 +113,10 @@ cask "suspicious-package"
 # cask "osxfuse"                # add fuse filesystems
 # cask "gpgtools"
 # cask "dockertoolbox"
+
+######################################################################
+# Fonts                                                              #
+######################################################################
+
+tap "caskroom/fonts"
+cask "font-menlo-for-powerline"

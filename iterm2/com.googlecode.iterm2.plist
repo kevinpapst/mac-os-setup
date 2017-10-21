@@ -435,9 +435,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>3</string>
 	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
+	<string>3</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
@@ -478,6 +478,8 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>497 66 409 955 0 0 1920 1057 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1409 110 445 408 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
@@ -487,7 +489,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>424 200 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>517 501 796 473 0 0 1920 1057 </string>
+	<string>517 581 796 473 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>4 0 1916 1057 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -530,65 +532,65 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.45882350206375122</real>
+				<real>0.29776537418365479</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.43137252330780029</real>
+				<real>0.7658686637878418</real>
 				<key>Red Component</key>
-				<real>0.34509804844856262</real>
+				<real>0.68670415878295898</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.51372545957565308</real>
+				<real>0.32532942295074463</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.48235297203063965</real>
+				<real>0.65942960977554321</real>
 				<key>Red Component</key>
-				<real>0.3960784375667572</real>
+				<real>0.79306977987289429</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.58823525905609131</real>
+				<real>0.83605378866195679</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.58039218187332153</real>
+				<real>0.6570470929145813</real>
 				<key>Red Component</key>
-				<real>0.51372557878494263</real>
+				<real>0.46930849552154541</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.77823466062545776</real>
+				<real>0.63082903623580933</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.43224334716796875</real>
+				<real>0.39786374568939209</real>
 				<key>Red Component</key>
-				<real>0.42395871877670288</real>
+				<real>0.87488794326782227</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.63137257099151611</real>
+				<real>0.75647622346878052</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.63137251138687134</real>
+				<real>0.80789458751678467</real>
 				<key>Red Component</key>
-				<real>0.57647067308425903</real>
+				<real>0.34084320068359375</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -686,24 +688,24 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.20169290900230408</real>
+				<real>0.57230675220489502</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.15713045001029968</real>
+				<real>0.57230675220489502</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.57230675220489502</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10837437212467194</real>
+				<real>0.34737777709960938</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.36945796012878418</real>
+				<real>0.59531718492507935</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -726,8 +728,6 @@
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
-			<key>Background Image Location</key>
-			<string></string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -742,7 +742,7 @@
 				<real>1</real>
 			</dict>
 			<key>Blend</key>
-			<real>0.30000001192092896</real>
+			<real>0.46373323507798025</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -750,7 +750,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>2.7867484930203044</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -792,7 +792,7 @@
 			<key>Cursor Guide Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>0.25</real>
+				<real>0.10000000000000001</real>
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Color Space</key>
@@ -849,7 +849,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.96318477033132521</real>
+			<real>0.88568924134036131</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1292,17 +1292,19 @@
 			<key>Name</key>
 			<string>Kevin</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>MenloForPowerline-Regular 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-RegularForPowerline 14</string>
+			<string>MenloForPowerline-Regular 14</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Open Toolbelt</key>
 			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
@@ -1457,6 +1459,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -1473,16 +1477,18 @@
 			<true/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Non-ASCII Font</key>
+			<true/>
 			<key>Use Tab Color</key>
 			<true/>
 			<key>Use Underline Color</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>0.95349562311746983</real>
+			<real>1.031745340737952</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/kevin</string>
 		</dict>
@@ -1498,7 +1504,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>F5C0DCC7-058A-4384-99F9-50F5F11640F2</string>
 	<key>NoSyncLastTipTime</key>
-	<real>530144453.026959</real>
+	<real>530230983.905316</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1578,6 +1584,7 @@
 		<string>0065</string>
 		<string>0066</string>
 		<string>0067</string>
+		<string>0068</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1643,7 +1650,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-20T08:11:10Z</date>
+	<date>2017-10-21T09:53:57Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>

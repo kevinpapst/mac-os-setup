@@ -19,15 +19,8 @@ done
 
 print_result $? 'Install XCode Command Line Tools'
 
-# Point the `xcode-select` developer directory to
-# the appropriate directory from within `Xcode.app`
-# https://github.com/alrra/dotfiles/issues/13
-
+# Point the `xcode-select` developer directory to the appropriate directory from within `Xcode.app`
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 print_result $? 'Make "xcode-select" developer directory point to Xcode'
 
-# Prompt user to agree to the terms of the Xcode license
-# https://github.com/alrra/dotfiles/issues/10
-
-sudo xcodebuild -license
-print_result $? 'Agree with the XCode Command Line Tools licence'
+sudo xcodebuild -license accept

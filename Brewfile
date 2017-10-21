@@ -27,6 +27,8 @@ brew "homebrew/php/php-code-sniffer"
 brew "homebrew/php/php-cs-fixer"
 
 cask "phpstorm"
+cask "atom"
+cask "textwrangler"
 
 ######################################################################
 # Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
@@ -51,8 +53,6 @@ cask "firefox"
 cask "google-chrome"
 cask "virtualbox"
 cask "vagrant"
-cask "atom"
-cask "textwrangler"
 cask "skype"
 cask "google-hangouts"
 cask "slack"

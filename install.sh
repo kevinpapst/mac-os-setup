@@ -61,7 +61,6 @@ fi
 if ask_question 'Do you want to install new .dotfiles?'; then
     echo "Installing new .dotfiles ..."
     rsync -av --no-perms --exclude="README.md" ./dotfiles/ ~
-    source ~/.zshrc
 fi
 
 # -------------------------------------------------------------------------------------------
@@ -73,5 +72,6 @@ if ask_question 'Do you want to reboot your computer now?'; then
     exit 0
 fi
 
-unset ask_question
+unset $DOTFILES_DIR
+unset -f ask_question
 exit 1

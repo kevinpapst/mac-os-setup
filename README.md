@@ -53,6 +53,9 @@ cd ~/dotfiles/
 ./install.sh
 ```
 
+If oh-my-zsh interupts the installation by changing the shell, simply enter `exit` and you will get back 
+to the installation flow. After the istallation is finished, restart your terminal/iTerm2.
+
 ## Roadmap ...
 
 This repo is missing a lot of cool things, so my roadmap has at least the following stuff on it:

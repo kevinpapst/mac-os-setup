@@ -1,4 +1,4 @@
-# MacOS developer setup (including for MacOS)
+# MacOS developer setup - dotfiles and software
 
 This is a not only a simple .dotfiles repo from a PHP developer
 but also a bunch of scripts to create a full featured working environment for myself. 
@@ -32,7 +32,7 @@ Make sure that you checked the following points before you run the installer:
 - Carefully read and adjust `Brewfile` to only install the software you need   
 - Make sure that the `.macos` settings are thoroughly reviewed    
 - Adjust your Git credentials and GitHub settings in `settings/git.sh` 
-- add the file `~/dotfiles/.local` or `~/.bash_local` and add your own stuff
+- add the file `~/dotfiles/.local` or `~/.bash_local` for all your sensitive local settings 
 
 ## Installation
 
@@ -53,16 +53,19 @@ cd ~/dotfiles/
 ./install.sh
 ```
 
-## Roadmap
+## Roadmap ...
 
 This repo is missing a lot of cool things, so my roadmap has at least the following stuff on it:
 
-- custom zsh configs at zsh/*.zsh
-- https://github.com/altercation/solarized/tree/master/intellij-colors-solarized
-- oh-my-zsh plugins: colored-man colorize github jira vagrant virtualenv osx zsh-syntax-highlighting fabric node npm history git-flow
+- Support for [custom](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization) zsh configs and plugins at `zsh/*.zsh`
+- [Powerlevel9k](https://gist.github.com/kevin-smets/8568070)
+- Keep PHPStorm setting in repo 
+- [Solarized color scheme for PHPStorm](https://github.com/altercation/solarized/tree/master/intellij-colors-solarized)
+- Test and add `oh-my-zsh` plugins: colored-man colorize github jira vagrant virtualenv osx zsh-syntax-highlighting fabric node npm history git-flow
 
-## Inspired by ...
+## Inspired by ❤
 
+* [Oh-My-ZSH](https://github.com/robbyrussell/oh-my-zsh) feel nerdy in your terminal 
 * [https://github.com/nicksp/dotfiles](Nick Plekhanov's Dotfiles) and his zsh inspiration
 * [Dotfiles](http://dotfiles.github.io/) the unofficial guide to dotfiles on GitHub
 * [Kevin Elliott](https://github.com/kevinelliott/.dotfiles) for his dotfiles repo

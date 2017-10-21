@@ -29,7 +29,7 @@ brew "homebrew/php/php-cs-fixer"
 cask "phpstorm"
 
 ######################################################################
-# Shell: iTerm2, zsh, oh-my-zsh, plugins and themes                  #
+# Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
 ######################################################################
 
 cask "iterm2"
@@ -38,7 +38,6 @@ brew "zsh-autosuggestions"
 
 tap "caskroom/fonts"
 cask "font-menlo-for-powerline"
-brew install zsh-autosuggestions
 brew "zsh-autosuggestions"
 
 ######################################################################

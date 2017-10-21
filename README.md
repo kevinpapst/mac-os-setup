@@ -53,6 +53,13 @@ cd ~/dotfiles/
 ./install.sh
 ```
 
+## Roadmap
+
+This repo is missing a lot of cool things, so my roadmap has at least the following stuff on it:
+
+- custom zsh configs at zsh/*.zsh
+- https://github.com/altercation/solarized/tree/master/intellij-colors-solarized
+- oh-my-zsh plugins: colored-man colorize github jira vagrant virtualenv osx zsh-syntax-highlighting fabric node npm history git-flow
 
 ## Inspired by ...
 

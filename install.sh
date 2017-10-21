@@ -18,21 +18,12 @@ function ask_question() {
 DOTFILES_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 
 # Pull latest files from GitHub
-echo "Fetching latest version from GitHub"
+echo "Fetching latest version from GitHub ..."
 
 cd $DOTFILES_DIR
 git pull origin master
 git submodule update --init --recursive
 git submodule foreach git pull origin master
-
-# -------------------------------------------------------------------------------------------
-
-# activate dotfiles from repo
-if ask_question 'Do you want to install new .dotfiles?'; then
-    echo "Installing new .dotfiles ..."
-    rsync -av --no-perms --exclude="README.md" ./dotfiles/ ~
-    source ~/.bash_profile
-fi
 
 # -------------------------------------------------------------------------------------------
 
@@ -62,6 +53,15 @@ if ask_question 'Do you want to install application and MacOS settings?'; then
         echo "Apply settings from $s ..."
         sh $s
     done
+fi
+
+# -------------------------------------------------------------------------------------------
+
+# last action: activate dotfiles from repo, which depend of previously installed software (especially oh-my-zsh)
+if ask_question 'Do you want to install new .dotfiles?'; then
+    echo "Installing new .dotfiles ..."
+    rsync -av --no-perms --exclude="README.md" ./dotfiles/ ~
+    source ~/.zshrc
 fi
 
 # -------------------------------------------------------------------------------------------

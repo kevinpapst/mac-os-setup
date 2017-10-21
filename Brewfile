@@ -7,6 +7,7 @@ cask_args appdir: "/Applications"
 
 brew "git"
 brew "git-extras"
+brew "git-flow"
 brew "curl"
 brew "tree"
 brew "openssl"
@@ -28,13 +29,25 @@ brew "homebrew/php/php-cs-fixer"
 cask "phpstorm"
 
 ######################################################################
+# Shell: iTerm2, zsh, oh-my-zsh, plugins and themes                  #
+######################################################################
+
+cask "iterm2"
+brew "zsh"
+brew "zsh-autosuggestions"
+
+tap "caskroom/fonts"
+cask "font-menlo-for-powerline"
+brew install zsh-autosuggestions
+brew "zsh-autosuggestions"
+
+######################################################################
 # And now the Applications with UI                                   #
 ######################################################################
 
 cask "dropbox"
 cask "google-drive"
 cask "sequel-pro"
-cask "iterm2"
 cask "firefox"
 cask "google-chrome"
 cask "virtualbox"
@@ -72,7 +85,7 @@ cask "keka"
 # Image editing and manipulation
 # cask "gimp"                   # almost too much for the simple tasks
 # cask "seashore"               # simple image editing for everyone
-cask "imageoptim"
+cask "imageoptim"               # shrinking all kinds of images
 cask "imagealpha"               # PNG optimizer
 
 # cask "spectacle"              # Spectacle is free and has window resizing and snapping features
@@ -97,7 +110,7 @@ cask "quicklook-csv"
 cask "betterzipql"
 cask "qlimagesize"
 cask "webpquicklook"
-cask "suspicious-package"
+cask "suspicious-package"       # http://www.mothersruin.com/software/SuspiciousPackage/
 
 # Software I might use occasionally or did not test thoroughly enough to activate by default
 #
@@ -113,10 +126,3 @@ cask "suspicious-package"
 # cask "osxfuse"                # add fuse filesystems
 # cask "gpgtools"
 # cask "dockertoolbox"
-
-######################################################################
-# Fonts                                                              #
-######################################################################
-
-tap "caskroom/fonts"
-cask "font-menlo-for-powerline"

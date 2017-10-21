@@ -72,6 +72,6 @@ if ask_question 'Do you want to reboot your computer now?'; then
     exit 0
 fi
 
-unset $DOTFILES_DIR
+unset DOTFILES_DIR
 unset -f ask_question
 exit 1

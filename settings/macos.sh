@@ -52,6 +52,17 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
+###############################################################################
+# Time Machine                                                                #
+###############################################################################
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# Doesn't work with High Sierra any longer...
+# Disable local Time Machine backups
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
+
 ######################################################################
 # TODO make sure all applications fetch their new settings           #
 ######################################################################

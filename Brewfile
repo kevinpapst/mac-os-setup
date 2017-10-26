@@ -21,6 +21,9 @@ brew "docker-machine"
 # Everything PHP related                                             #
 ######################################################################
 
+# High Sierra comes with PHP 7.1 bundled, which is excellent - so we
+# at least don't need to reinstall different PHP versions!
+
 tap "homebrew/homebrew-php"
 brew "homebrew/php/composer"
 brew "homebrew/php/php-code-sniffer"
@@ -46,6 +49,7 @@ brew "zsh-autosuggestions"
 # And now the Applications with UI                                   #
 ######################################################################
 
+cask "commander-one"
 cask "dropbox"
 cask "google-drive"
 cask "sequel-pro"

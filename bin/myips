@@ -1,0 +1,19 @@
+#!/bin/sh
+# myips Get local and WAN IP adddresses
+# Thanks to http://brettterpstra.com/2017/10/30/a-few-new-shell-tricks/
+
+for interface in $(networksetup -listallhardwareports | awk '/^Device: /{print $2}'); do
+	ip=$(ipconfig getifaddr $interface)
+	[ "$ip" != "" ] && break
+done
+
+[ "$ip" != "" ] && locip=$ip || locip="inactive"
+
+ip=`dig +short myip.opendns.com @resolver1.opendns.com`
+[ "$ip" != "" ] && extip=$ip || extip="inactive"
+
+printf '%11s: %s\n%11s: %s\n' "Local IP" $locip "External IP" $extip
+
+unset ip
+unset extip
+unset locip

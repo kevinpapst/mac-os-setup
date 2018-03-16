@@ -69,7 +69,7 @@ This repo is missing a lot of cool things, so my roadmap has at least the follow
 ## Inspired by ❤
 
 * [Oh-My-ZSH](https://github.com/robbyrussell/oh-my-zsh) feel nerdy in your terminal 
-* [https://github.com/nicksp/dotfiles](Nick Plekhanov's Dotfiles) and his zsh inspiration
+* [Nick Plekhanov's Dotfiles](https://github.com/nicksp/dotfiles) and his zsh inspiration
 * [Dotfiles](http://dotfiles.github.io/) the unofficial guide to dotfiles on GitHub
 * [Kevin Elliott](https://github.com/kevinelliott/.dotfiles) for his dotfiles repo
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) for all his scripts

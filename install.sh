@@ -60,7 +60,7 @@ fi
 # last action: activate dotfiles from repo, which depend of previously installed software (especially oh-my-zsh)
 if ask_question 'Do you want to install new .dotfiles?'; then
     echo "Installing new .dotfiles ..."
-    rsync -av --no-perms --exclude="README.md" ./dotfiles/ ~
+    rsync -av --no-perms --exclude="README.md" --exclude=".git" ./dotfiles/ ~
 fi
 
 # -------------------------------------------------------------------------------------------

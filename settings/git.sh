@@ -34,4 +34,3 @@ git config --global user.email "kpapst@gmx.net"
 git config --global github.user kevinpapst
 git config --global github.token your_token_here
 git config --global color.ui true
-composer config -g github-oauth.github.com your_token_here

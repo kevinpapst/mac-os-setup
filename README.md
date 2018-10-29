@@ -66,6 +66,13 @@ This repo is missing a lot of cool things, so my roadmap has at least the follow
 - [Solarized color scheme for PHPStorm](https://github.com/altercation/solarized/tree/master/intellij-colors-solarized)
 - Test and add `oh-my-zsh` plugins: colored-man colorize github jira vagrant virtualenv osx zsh-syntax-highlighting fabric node npm history git-flow
 
+## Applications that need to be instaled manually
+
+- [Etcher](https://etcher.io/) (burn SD images)
+- Monosnap (App Store)
+- XCode (App Store)
+- Spark
+
 ## Inspired by ❤
 
 * [Oh-My-ZSH](https://github.com/robbyrussell/oh-my-zsh) feel nerdy in your terminal 

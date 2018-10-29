@@ -7,31 +7,62 @@ cask_args appdir: "/Applications"
 
 brew "git"
 brew "git-extras"
-brew "git-flow"
-brew "curl"
-brew "tree"
-brew "openssl"
-brew "wget"
-
+#brew "git-flow"
+#brew "curl"
+#brew "tree"
+#brew "openssl"
+#brew "wget"
 brew "mariadb"
-brew "docker"
-brew "docker-machine"
+cask "db-browser-for-sqlite"
+cask "sequel-pro"
+cask "virtualbox"
+cask "vagrant"
+cask "transmit"
+cask "postman"
+
+# ==== Some version control tools you might like ====
+# cask "github-desktop"
+# cask "tower"
+# cask "sourcetree"
+
+# ==== not the best native experience in OSX ====
+# brew "docker"
+# brew "docker-machine"
+
+# ==== VPN Connections ====
+# cask "tunnelbear"
+cask "tunnelblick"
 
 ######################################################################
 # Everything PHP related                                             #
 ######################################################################
 
-# High Sierra comes with PHP 7.1 bundled, which is excellent - so we
-# at least don't need to reinstall different PHP versions!
+# High Sierra comes with PHP 7.1 bundled, which is excellent - so I will stick with that one
 
 tap "homebrew/homebrew-php"
 brew "homebrew/php/composer"
 brew "homebrew/php/php-code-sniffer"
 brew "homebrew/php/php-cs-fixer"
 
+######################################################################
+# Licensed software                                                  #
+######################################################################
+
 cask "phpstorm"
-cask "atom"
-cask "textwrangler"
+cask "gemini"
+cask "cleanmymac"
+cask "hyperdock"
+cask "powerphotos"
+cask "moneymoney"
+
+# no license for 6 yet, so we install the latest v5
+# cask "istat-menus"
+cask "https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb"
+
+cask "sublime-text"
+
+# subversion is oldschool, try to avoid it by any means
+# cask "versions"
 
 ######################################################################
 # Shell: iTerm2, zsh, oh-my-zsh plugins and themes                   #
@@ -46,74 +77,104 @@ cask "font-menlo-for-powerline"
 brew "zsh-autosuggestions"
 
 ######################################################################
-# And now the Applications with UI                                   #
+# (Text-)Editors                                                     #
+######################################################################
+
+cask "atom"
+
+# maybe not for your everyday work
+# cask "gitbook"
+# cask "poedit"
+# cask "macdown"
+
+# textwrangler is no longer available and became part of bbedit
+# cask "bbedit"
+
+######################################################################
+# Everyday tools / Cloud / Communication                             #
 ######################################################################
 
 cask "commander-one"
-cask "dropbox"
-cask "google-drive"
-cask "sequel-pro"
-cask "firefox"
-cask "google-chrome"
-cask "virtualbox"
-cask "vagrant"
+
+# google is enough spyware for one computer ;-)
+# cask "dropbox"
+
+cask "google-backup-and-sync"
+
 cask "skype"
-cask "google-hangouts"
 cask "slack"
 cask "vlc"
-cask "transmit"
-cask "istat-menus"
-cask "gitbook"
-cask "poedit"
-cask "macdown"
 cask "libreoffice"
 cask "handbrake"
-cask "google-photos-backup"
-cask "grandperspective"
-cask "moneymoney"
-cask "calibre"
-cask "handbrake"
-cask "steam"
-cask "flash"
-
-# (Not only) frontend devs might like these as well
-# cask "firefoxnightly"
-# cask "google-chrome-canary"
-# cask "opera"
-
-# Not sure which (un-)archiver is better
-cask "the-unarchiver"
-cask "keka"
-
-# Image editing and manipulation
-# cask "gimp"                   # almost too much for the simple tasks
-# cask "seashore"               # simple image editing for everyone
-cask "imageoptim"               # shrinking all kinds of images
-cask "imagealpha"               # PNG optimizer
-
-# cask "spectacle"              # Spectacle is free and has window resizing and snapping features
-cask "hyperdock"                # ... where HyperDock has more features but requires a license
+cask "cheatsheet"
 
 # cask "keepassx"               # I prefer MacPass due to its much nicer UI
 cask "macpass"
 
-# Some version control tools you might like
-# cask "github-desktop"
-# cask "tower"
-cask "versions"
-cask "sourcetree"
+# cask "google-hangouts"
+# cask "grandperspective"
+# cask "calibre"
+# cask "handbrake"
+# cask "steam"
+# cask "flash"
 
-# Quick Look Plugins, see https://github.com/sindresorhus/quick-look-plugins
-cask "qlcolorcode"
-cask "qlstephen"
-cask "qlmarkdown"
-cask "quicklook-json"
-cask "qlprettypatch"
-cask "quicklook-csv"
-cask "betterzipql"
-cask "qlimagesize"
-cask "webpquicklook"
-cask "suspicious-package"       # http://www.mothersruin.com/software/SuspiciousPackage/
+# cask "spectacle"              # Spectacle is free and has window resizing and snapping features, but I use HyperDock
+
+# cask "the-unarchiver"		    # don't know which one ...
+# cask "keka"			        # ... is the better un-archiver, so try any of them
+
+#cask "aerial"                   "# screensaver showing the AppleTV aerial videos
+
+######################################################################
+# Drivers                                                            #
+######################################################################
+
+tap "caskroom/drivers"
+cask "canon-pixma-scanner-driver-ica"     # for my Canon MG5350 printer
+
+######################################################################
+# Browser                                                            #
+######################################################################
+
+cask "firefox"
+cask "google-chrome"
+# cask "chromium"
+# cask "firefoxnightly"
+# cask "google-chrome-canary"
+# cask "opera"
+
+######################################################################
+# Image editing and manipulation                                     #
+######################################################################
+
+cask "macsvg"
+# cask "gimp"                   # almost too much for the simple tasks
+# cask "seashore"               # simple image editing for everyone
+# cask "imageoptim"             # shrinking all kinds of images
+# cask "imagealpha"             # PNG optimizer
+
+######################################################################
+# Quick Look Plugins                                                 #
+######################################################################
+
+# see https://github.com/sindresorhus/quick-look-plugins
+
+#cask "qlcolorcode"
+#cask "qlstephen"
+#cask "qlmarkdown"
+#cask "quicklook-json"
+#cask "qlprettypatch"
+#cask "quicklook-csv"
+#cask "betterzipql"
+#cask "qlimagesize"
+#cask "webpquicklook"
+#cask "suspicious-package"       # http://www.mothersruin.com/software/SuspiciousPackage/
+
+######################################################################
+# TESTING ...                                                        #
+######################################################################
+
+cask "gmvault"                  # backup & restore gmail accounts
 
 # Software I might use occasionally or did not test thoroughly enough to activate by default
 #
@@ -121,7 +182,6 @@ cask "suspicious-package"       # http://www.mothersruin.com/software/Suspicious
 # cask "dash"                   # developer documentation offline
 # cask "silverlight"            # microsoft libs that we hopefully don't need
 # cask "quicksilver"            # productivity app (a better Spotlight)
-# cask "tunnelbear"             # vpn
 # cask "glimmerblocker"         # proxy for ad-blocking
 # cask "flux"                   # dim screen color at night
 # cask "screenflow"             # screencast recorder

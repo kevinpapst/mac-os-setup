@@ -30,3 +30,6 @@ brew tap homebrew/bundle
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+# deactivate google analytics, see https://docs.brew.sh/Analytics
+brew analytics off

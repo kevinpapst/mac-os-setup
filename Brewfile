@@ -176,6 +176,9 @@ cask "macsvg"
 
 cask "gmvault"                  # backup & restore gmail accounts
 
+brew "ffmpeg"
+brew "youtube-dl"
+
 # Software I might use occasionally or did not test thoroughly enough to activate by default
 #
 # cask "elmedia-player"         # vlc alternative with airplay support
